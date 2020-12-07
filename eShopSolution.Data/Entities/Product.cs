@@ -4,7 +4,7 @@ using System.Text;
 
 namespace eShopSolution.Data.Entities
 {
-    class Product
+    public class Product
     {
         public int Id { get; set; }
         public decimal Price { get; set; }
@@ -13,5 +13,9 @@ namespace eShopSolution.Data.Entities
         public int ViewCount { get; set; }
         public DateTime DateCreated { get; set; }
         public string SeoAlias { get; set; }
+
+        public List<ProductInCategory> productInCategories { get; set; }
+
+        public List<OrderDetail> OrderDetails { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace eShopSolution.Data.Entities
 {
-    class Order
+    public class Order
     {
         public int Id { set; get; }
         public DateTime OrderDate { set; get; }
@@ -15,5 +15,7 @@ namespace eShopSolution.Data.Entities
         public string ShipEmail { set; get; }
         public string ShipPhoneNumber { set; get; }
         public OrderStatus Status { set; get; }
+
+        public List<OrderDetail> OrderDetails { get; set; }
     }
 }
