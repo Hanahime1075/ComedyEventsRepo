@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComedyEvents", "ComedyEvent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EshopSolution.WebApp", "..\EshopSolution.WebApp\EshopSolution.WebApp.csproj", "{509C9DB1-D85E-4CB3-AC41-AAE83F471A37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.Data", "..\eShopSolution.Data\eShopSolution.Data.csproj", "{CBE27027-ABC0-4AE4-8AF1-0B146F8E3CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.Application", "..\eShopSolution.Application\eShopSolution.Application.csproj", "{25F2FBDB-D24A-401D-82B7-E1C1A32F78D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{509C9DB1-D85E-4CB3-AC41-AAE83F471A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{509C9DB1-D85E-4CB3-AC41-AAE83F471A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{509C9DB1-D85E-4CB3-AC41-AAE83F471A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE27027-ABC0-4AE4-8AF1-0B146F8E3CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE27027-ABC0-4AE4-8AF1-0B146F8E3CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE27027-ABC0-4AE4-8AF1-0B146F8E3CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE27027-ABC0-4AE4-8AF1-0B146F8E3CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F2FBDB-D24A-401D-82B7-E1C1A32F78D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F2FBDB-D24A-401D-82B7-E1C1A32F78D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F2FBDB-D24A-401D-82B7-E1C1A32F78D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F2FBDB-D24A-401D-82B7-E1C1A32F78D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
