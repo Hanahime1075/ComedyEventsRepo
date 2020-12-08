@@ -8,7 +8,7 @@ namespace eShopSolution.Application.Catalog.Products
 {
     public interface IManageProductService
     {
-        Task<int> Create(GetManageProductPagingRequest request);
+        Task<int> Create(ProductCreateRequest request);
 
         Task<int> Update(ProductUpdateRequest request);
 
@@ -21,7 +21,7 @@ namespace eShopSolution.Application.Catalog.Products
 
         Task<List<ProductViewModel>> GetAll();
 
-        Task<PagedResult<ProductViewModel>> GetAllPaging(GetPublicProductPagingRequest request);
+        Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request);
 
         Task<int> AddImages(int productId, List<IFormFile> file);
         Task<int> RemoveImages(int imageId);

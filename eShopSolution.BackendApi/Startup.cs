@@ -2,18 +2,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ComedyEvents.Context;
-using ComedyEvents.Services;
+using eShopSolution.Application.Catalog.Products;
+using eShopSolution.Data.EF;
+using eShopSolution.Utilities.Constants;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace ComedyEvents
+namespace eShopSolution.BackendApi
 {
     public class Startup
     {
@@ -28,8 +30,11 @@ namespace ComedyEvents
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<IEventRepository, EventRepository>();
-            services.AddDbContext<EventContext>();
+            services.AddTransient<IPublicProductService, PublicProductService>();
+            // 2 cach ket noi sql
+            //services.AddDbContext<EShopDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("eShopSolutionDb")));
+            
+            services.AddDbContext<EShopDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString(SystemConstants.MainConnectionString)));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
